@@ -2,8 +2,11 @@
 
     width: 100%;
     height: 100vh;
+    display: flex; 
     background: top center;
-    background-size: cover;
+    background-size:cover;
+
+
 }
 
 /* vh significa el 100% de la altura del viewport(ventana navegaor) */
