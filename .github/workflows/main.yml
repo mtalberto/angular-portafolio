@@ -40,9 +40,7 @@ jobs:
         run: npm run build:prod
 
            #Route file renaming
-      - name: Rename index for routing
-        run: mv dist/angular-portafolio/index.html dist/angular-portafolio/404.html
-
+     
 
         #deploy to github pages
       - name: deploy to Pages 
