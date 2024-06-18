@@ -38,7 +38,7 @@
     "@iconify/tailwind": "^1.1.1",
     "@types/aos": "^3.0.7",
     "@types/jasmine": "~5.1.0",
-    "angular-cli-ghpages": "^2.0.1",
+    
     "autoprefixer": "^10.4.19",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
