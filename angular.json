@@ -16,7 +16,7 @@
             "allowedCommonJsDependencies": [
              "lodash"
              ],
-            "outputPath": "dist/angular-portafolio",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
