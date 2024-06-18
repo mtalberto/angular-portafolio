@@ -36,7 +36,7 @@ jobs:
         run: npm i
         #Build app for production
       - name: Build app bundle
-        run: npm run build
+        run: npm run build:prod
         #deploy to github pages
       - name: deploy to Pages 
         uses: crazy-max/ghaction-github-pages@v4.0.0
