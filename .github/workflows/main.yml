@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v4
+      #Route file renaming
+      - name: Rename index for routing
+        run: mv dist/angular-portafolio/index.html dist/angular-portafolio/404.html
 
         #Setup nodeJs       
       - name: Setup nodejs
