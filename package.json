@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production --base-href //",
     "watch": "ng build --watch --configuration development",
     "clean": "rimraf dist node_modules && npm install",
     "rebuild": "npm run clean && npm run build",
