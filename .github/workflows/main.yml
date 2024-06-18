@@ -38,6 +38,9 @@ jobs:
         #Build app for production
       - name: Build app bundle
         run: npm run build:prod
+        #rename file
+      - name: Rename index for routing
+        run: mv dist/angular-portafolio/index.html dist/angular-portafolio/404.html  
 
       
 
