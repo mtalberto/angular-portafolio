@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href//",
+    "build:prod": "ng build --configuration production --base-href//https://mtalberto.github.io/angular-portafolio/",
     "watch": "ng build --watch --configuration development",
     "clean": "rimraf dist node_modules && npm install",
     "rebuild": "npm run clean && npm run build",
