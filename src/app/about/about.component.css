@@ -1,7 +1,9 @@
 
 #about{
-
- height: 95vh;
-
+    display: fixed;
+    width: 100%;
+    height: 98vh;
+    
 }
+
 

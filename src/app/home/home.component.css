@@ -1,13 +1,15 @@
 #homeimage {
 
-    width: 100%;
+    font-family: "Poppins", sans-serif;
+   
     height: 100vh;
-    display: flex; 
+    display: flex;
     background: top center;
     background-size:cover;
-
+    
 
 }
+
 
 /* vh significa el 100% de la altura del viewport(ventana navegaor) */
 
