@@ -41,7 +41,7 @@ jobs:
 
            #Route file renaming
       - name: Rename index for routing
-        run: mv dist/angular-portafolio/index.html dist/angular-portafolio/404.html
+        run: mv angular-portafolio/index.html angular-portafolio/404.html
 
 
         #deploy to github pages
