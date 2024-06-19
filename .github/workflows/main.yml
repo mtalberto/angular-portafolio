@@ -25,8 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v4
-     
-
         #Setup nodeJs       
       - name: Setup nodejs
         uses: actions/setup-node@v4.0.2
@@ -40,15 +38,13 @@ jobs:
         run: npm run build:prod
         #rename file
       - name: Rename index for routing
-        run: mv dist/angular-portafolio/brownser/index.html  dist/angular-portafolio/brownser/404.html  
-
-      
+        run: mv dist/angular-portafolio/browser/index.html  dist/angular-portafolio/browser/404.html  
 
         #deploy to github pages
       - name: deploy to Pages 
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
-          build_dir: dist/angular-portafolio/brownser
+          build_dir: dist/angular-portafolio
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
