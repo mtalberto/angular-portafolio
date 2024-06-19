@@ -1,5 +1,7 @@
 # ESTE PROYECTO ESTA HECHO CON ANGULAR 18, AOS , TYPEDJS Y TAILWINDCSS
 
+#  deploy with Github secrets token
+
 
 
 
