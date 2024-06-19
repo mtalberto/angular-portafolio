@@ -40,7 +40,7 @@ jobs:
         run: npm run build:prod
         #rename file
       - name: Rename index for routing
-        run: mv dist/angular-portafolio/index.html dist/angular-portafolio/404.html  
+        run: mv dist/angular-portafolio/brownser/index.html  dist/angular-portafolio/brownser/404.html  
 
       
 
@@ -48,7 +48,7 @@ jobs:
       - name: deploy to Pages 
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
-          build_dir: dist/angular-portafolio
+          build_dir: dist/angular-portafolio/brownser
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         
