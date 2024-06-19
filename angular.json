@@ -13,20 +13,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-           
+            "allowedCommonJsDependencies": ["lodash"],
             "outputPath": "dist/angular-portafolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
               },
-               {
+              {
                 "glob": "**/*",
                 "input": "src/assets/imagenes",
                 "output": "assets/imagenes"
@@ -35,7 +33,6 @@
             "styles": [
               "src/custom-theme.scss",
               "node_modules/aos/dist/aos.css",
-              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,10 +91,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -106,7 +100,7 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/boostrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
