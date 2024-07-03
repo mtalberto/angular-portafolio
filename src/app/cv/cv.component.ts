@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './cv.component.css'
 })
 export class CvComponent {
-
+ 
+  tittle='CV';
 }
