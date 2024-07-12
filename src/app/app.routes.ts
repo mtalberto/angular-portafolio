@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CvComponent } from './cv/cv.component';
 
+
 export const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'footer',component:FooterComponent},

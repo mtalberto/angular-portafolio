@@ -1,21 +1,34 @@
-<section id="cv">
-  <div class=" grid container  mx-auto grid-rows-2 grid-flow-col  gap-x-1">
-    <div class="col-span-8 pt-10">
-    <h3 class="pl-40 pt-10 text-[#085f2a] underline font-sans text-2xl"><strong>{{tittle}}</strong></h3>
+<section id="cv" class="bg-gray-100">
+  <div class="container mx-auto grid grid-cols-3 ">
+    <!-- Primera columna con dos filas: título y imagen -->
+    <div class="col-span-1 grid grid-rows-2">
+      <div class="row-span-1  text-center">
+        <h3 class="textcv text-[#202046] underline text-2xl">
+          <strong>{{tittle}}</strong>
+        </h3>
+      </div>
+      <div class="row-span-2  ml-2 flex justify-center items-center">
+        <img src="assets/imagenes/fotopersonal.jpg" alt="fotopersonal"
+          class="rounded-full w-48 h-48">
+      </div>
     </div>
-          <div class="pl-40"  data-aos="fade-right">
-          <img  src="assets/imagenes/fotopersonal.jpg" alt="fotopersonal">
-          </div>
-      
-        
-      <div class="  pt-10  ">
-        hola asdasdasdasdasdasdasdasdasd
+    <!-- Segunda columna: contenido -->
+    <div class="col-span-2 pt-20  row-span-1" data-aos="fade-right">
+      <ul class="timeline">
+        <li class="mb-4">
+          <em class=" font-italic">{{info.data.titulacion.dam}}</em>
+          <p class>{{info.data.titulacion.year}}</p>
+        </li>
+        <li class>
+          <em class=" font-italic">{{info.data.titulacionSeguridad.seguridad}}</em>
+          <p class>{{info.data.titulacionSeguridad.year}}</p>
+        </li>
+        <li class>
 
-      </div>  
-
-
-      
-    
+          <em class="font-italic">asd as</em>
+          <p class>2018 - 2019</p>
+        </li>
+      </ul>
     </div>
-
+  </div>
 </section>

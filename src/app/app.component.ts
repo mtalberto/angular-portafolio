@@ -6,7 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { CvComponent } from './cv/cv.component';
 
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -20,7 +19,8 @@ import { CvComponent } from './cv/cv.component';
     CvComponent,
   ],
 })
-export class AppComponent {
+export class AppComponent  {
+
 
   title = 'angular-portafolio';
 }
