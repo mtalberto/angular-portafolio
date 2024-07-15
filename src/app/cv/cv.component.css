@@ -1,5 +1,5 @@
 #cv{
-    
+   
     height: 150vh;
 }
 ul.timeline {
@@ -10,8 +10,8 @@ ul.timeline {
 
 ul.timeline:before {
     
-    content: ' ';
-    background: #598ca1;
+ content: ' ';
+    background: #105572;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -29,13 +29,12 @@ ul.timeline > li {
     padding-top:100px;
 }
 ul.timeline > li:before {
-    
     content: ' ';
     background: white;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #2082ac;
+    border: 3px solid #105572;
     left: 20px;
     width: 20px;
     height: 20px;

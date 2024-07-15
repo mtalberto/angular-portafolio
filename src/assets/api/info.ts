@@ -12,7 +12,8 @@ export const info = {
 
 
         },
-        'titulacion':{
+        'titulacion':
+        {
             'dam': 'Desarrollador de aplicaciones multiplataforma',
             'year': '(2016-2019)'
         },
@@ -20,6 +21,11 @@ export const info = {
         {
             'seguridad': 'Seguridad informatica',
             'year': '(2023-2024)'
+        },
+        'language':
+        {
+            'level': 'B2.1',
+            'language': 'English'
         }
 
 
