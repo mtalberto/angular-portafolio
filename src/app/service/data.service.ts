@@ -8,7 +8,9 @@ export class DataService {
   private info: any;
 
   
-  constructor() {}
+  constructor() {
+    this.info = info;
+  }
 
   // Método para obtener la información
   getInfo() {
