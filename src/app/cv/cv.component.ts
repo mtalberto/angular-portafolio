@@ -22,7 +22,7 @@ export class CvComponent implements OnInit {
   tittle: string = 'Curriculum Vitae';
   detail: string = '+details';
   experiences: any[] = [];
-
+  showExperiences: boolean = false;
   //inyeccion de dependencia en angular
   //obtengo una "instancia de datasService"
   constructor(
@@ -38,5 +38,6 @@ export class CvComponent implements OnInit {
 
   detailOnClick(experience: any) {
     experience.detailIsDisplayed = !experience.detailIsDisplayed;
+    this.showExperiences = true;
   }
 }
