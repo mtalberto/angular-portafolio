@@ -2,7 +2,7 @@ export const experiences = [
   {
     title: 'Area de digitalizacion',
     company: 'Ozona Tech',
-    period: '2020 - 2020 (3 months)',
+    period: '2020 - 2020 (3 meses)',
     technologies: 'C#, .NET,Yaml',
     task: [
       'I have worked with machine learning in .NET, specifically focusing on training captchas. Additionaly, I have',
@@ -15,7 +15,7 @@ export const experiences = [
   {
     title: 'Monitoring',
     company: 'Doezos',
-    period: '2024 - 2024 (1 months)',
+    period: '2024 - 2024 (1 mes)',
     technologies: 'html, css , prestashop,MobaXterm, checkmk and nagios ',
     task: [
       'At Doezos, I was setting up a monitoring service for several hosts using MobaXterm and employing Checkmk for the monitoring tasks.',
