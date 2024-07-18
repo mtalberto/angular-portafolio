@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {info} from '../../assets/api/info';
-
+import { info } from '@info/info'; 
+//constante y el path en tsconfig.json
 @Injectable({
   providedIn: 'root',
 })

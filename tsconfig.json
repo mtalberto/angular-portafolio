@@ -13,7 +13,7 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
-    "paths": { "@info/*": ["./src/assets/api/*"]},
+    "paths": { "@info/*": ["./src/assets/api/*",]},
     "experimentalDecorators": true,
     "moduleResolution": "node",
      "emitDecoratorMetadata": true,

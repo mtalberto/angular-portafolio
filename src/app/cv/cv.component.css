@@ -1,6 +1,4 @@
-#cv{
-    height: 80vh;
-}
+
 ul.timeline {
     
     list-style-type: none;
@@ -42,4 +40,7 @@ ul.timeline > li:before {
 
 em,p,h5{
     margin-left: 50px;
+}
+button{
+    height: 40px;
 }
