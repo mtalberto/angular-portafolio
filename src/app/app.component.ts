@@ -3,8 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from './header/header.component';
-import { AboutComponent } from './about/about.component';
-
+import { CvComponent } from './cv/cv.component';
 
 
 @Component({
@@ -17,10 +16,11 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    AboutComponent,
+    CvComponent,
   ],
 })
-export class AppComponent {
+export class AppComponent  {
+
 
   title = 'angular-portafolio';
 }

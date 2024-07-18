@@ -1,1 +1,62 @@
-<p>cv works!</p>
+<section id="cv" class="bg-cyan-100">
+
+  <div class="container mx-auto grid grid-cols-1  md:grid-cols-3 gap-4">
+    <!-- Primera columna con dos filas: título y imagen -->
+    <div class="col-span-1  ">
+      <div class="row-span-1  text-center">
+        <h3 class="textcv text-[#30306d] underline text-2xl">
+          <strong>{{tittle}}</strong>
+        </h3>
+      </div>
+      <div class="row-span-2 mt-10 ml-2 flex justify-center items-center">
+        <img src="assets/imagenes/fotopersonal.jpg" alt="fotopersonal"
+          class="rounded-full w-48 h-48">
+      </div>
+    </div>
+    <!-- 2egunda columna: contenido -->
+    <div class="col-span-1 pt-20  " data-aos="fade-right">
+      <h4 class="pl-5"> <strong>Educacion</strong></h4>
+      <ul class="timeline">
+        <li class="mb-4">
+          <em class=" font-italic">{{info.data.titulacion.dam}}</em>
+          <p class>{{info.data.titulacion.year}}</p>
+        </li>
+        <li class>
+          <em
+            class=" font-italic">{{info.data.titulacionSeguridad.seguridad}}</em>
+          <p class>{{info.data.titulacionSeguridad.year}}</p>
+        </li>
+        <li class>
+
+          <em class="font-italic">{{info.data.language.level}}</em>
+          <p class>{{info.data.language.language}}</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 3 columna: md 768px -->
+    <div class="col-span-1 pt-20 md:pt-20" data-aos="fade-right">
+      <h4 class="pl-5"><strong>Experiencia</strong></h4>
+      <ul class="timeline">
+        <li *ngFor="let experience of experiences ">
+          <h4 class="text-xl font-bold ml-10   ">{{ experience.title }}</h4>
+          <h5>{{ experience.company }}</h5>
+          <p>{{ experience.period }}</p>
+          <p><strong>Technologies:</strong> {{ experience.technologies }}</p>
+          <button (click)="detailOnClick(experience)" type="button"
+            class="btn btn-primary ml-10">
+            <span *ngIf="!experience.detailIsDisplayed"></span>
+            <span *ngIf="experience.detailIsDisplayed">-</span>
+            {{detail}}</button>
+          <p *ngIf="experience.detailIsDisplayed">
+            <span *ngFor="let task of experience.task;let index = index">
+              <strong>  {{task}}  </strong>
+              <br>
+            </span>
+          </p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
