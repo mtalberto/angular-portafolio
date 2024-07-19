@@ -20,7 +20,7 @@ import { ExperienceService } from '../service/experience.service';
 export class CvComponent implements OnInit {
   info: any;
   tittle: string = 'Curriculum Vitae';
-  detail: string = '+details';
+  detail: string = 'details';
   experiences: any[] = [];
   showExperiences: boolean = false;
   //inyeccion de dependencia en angular
