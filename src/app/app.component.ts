@@ -4,6 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from './header/header.component';
 import { CvComponent } from './cv/cv.component';
+import { ContactoComponent } from "./contacto/contacto.component";
+import { ReactiveFormsModule } from '@angular/forms';
+import { initFlowbite } from 'flowbite';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
+
 
 
 @Component({
@@ -17,10 +23,15 @@ import { CvComponent } from './cv/cv.component';
     FooterComponent,
     HeaderComponent,
     CvComponent,
+    ContactoComponent,
+    ReactiveFormsModule,
+    SweetAlert2Module,
   ],
 })
-export class AppComponent  {
-
-
+export class AppComponent {
   title = 'angular-portafolio';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }

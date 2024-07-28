@@ -1,14 +1,15 @@
-<section id="cv" class="bg-cyan-100 py-8 flex flex-col min-h-screen">
-  <div class="container mx-auto flex-grow grid grid-cols-1 md:grid-cols-3 gap-4">
-    <!-- Primera columna con dos filas: título y imagen -->
+<section id="cv" class="bg-cyan-100 py-10 flex flex-col min-h-screen">
+  <div class="container mx-auto flex-grow grid  md:grid-cols-3 gap-4">
+    <!-- Primera columna con dos filas: título y imagen gap es para el marge entre columnas -->
     <div class="col-span-1">
       <div class="row-span-1 text-center">
-        <h3 class="textcv text-[#30306d] underline text-2xl">
+        <h3 class="textcv  underline text-2xl">
           <strong>{{ tittle }}</strong>
         </h3>
       </div>
       <div class="row-span-2 mt-10 ml-2 flex justify-center items-center">
-        <img src="assets/imagenes/fotopersonal.jpg" alt="fotopersonal" class="rounded-full w-48 h-48">
+        <img src="assets/imagenes/fotopersonal.jpg" alt="fotopersonal"
+          class="rounded-full w-48 h-48">
       </div>
     </div>
 
@@ -21,7 +22,8 @@
           <p>{{ info.data.titulacion.year }}</p>
         </li>
         <li>
-          <em class="font-italic">{{ info.data.titulacionSeguridad.seguridad }}</em>
+          <em class="font-italic">{{ info.data.titulacionSeguridad.seguridad
+            }}</em>
           <p>{{ info.data.titulacionSeguridad.year }}</p>
         </li>
         <li>
@@ -40,12 +42,13 @@
           <h5>{{ experience.company }}</h5>
           <p>{{ experience.period }}</p>
           <p><strong>Technologies:</strong> {{ experience.technologies }}</p>
-          <button (click)="detailOnClick(experience)" type="button" class="btn btn-primary ml-10">
-            <span *ngIf="!experience.detailIsDisplayed">+</span>
-            <span *ngIf="experience.detailIsDisplayed">-</span>
-            {{ detail }}
+          <button (click)="detailsOnClick(experience)" type="button"
+            class="btn btn-primary ml-10">
+            <span *ngIf="!experience.mostrar">+</span>
+            <span *ngIf="experience.mostrar">-</span>
+            {{ tareas }}
           </button>
-          <p *ngIf="experience.detailIsDisplayed">
+          <p *ngIf="experience.mostrar">
             <span *ngFor="let task of experience.task; let index = index">
               <strong class="block">{{ task }}</strong>
               <br>

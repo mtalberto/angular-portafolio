@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 import { DataService } from '../service/data.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -20,9 +21,9 @@ import { ExperienceService } from '../service/experience.service';
 export class CvComponent implements OnInit {
   info: any;
   tittle: string = 'Curriculum Vitae';
-  detail: string = 'details';
+  tareas: string = 'Tareas';
   experiences: any[] = [];
-  showExperiences: boolean = false;
+  
   //inyeccion de dependencia en angular
   //obtengo una "instancia de datasService"
   constructor(
@@ -36,8 +37,11 @@ export class CvComponent implements OnInit {
     this.experiences = this.experienceService.getExperiences();
   }
 
-  detailOnClick(experience: any) {
-    experience.detailIsDisplayed = !experience.detailIsDisplayed;
-    this.showExperiences = true;
+  detailsOnClick(experience: any) {
+    experience.mostrar = !experience.mostrar;
+    let detailIsDisplayed = false;
+
+
+
   }
 }
