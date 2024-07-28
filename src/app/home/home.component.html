@@ -2,13 +2,16 @@
 
 <!-- ngStyle es una directiva que te permite aplicar estilos de manera dinámica a un elemento HTML.
   Esto significa que puedes cambiar los estilos de un elemento en función de una condición o de algún valor que cambie en tu componente -->
-  <section id="homeimage"  [ngStyle]="{background:'url(./assets/imagenes/home-portafolio4.png'}" class="justify-content-center align-items-center ">
-       <div class=" h-screen w-screen flex flex-col items-center justify-center   ">
-        <h1 class=" text-5xl  text-[#ffffff]  "> {{nombre}}</h1>
+<section id="homeimage"
+  [ngStyle]="{background:'url(./assets/imagenes/home-portafolio.jpg'}"
+  class="justify-content-center align-items-center ">
+  <div class=" h-screen w-screen flex flex-col items-center justify-center   ">
+    <h1 class=" text-5xl  text-[#ffffff]  font-extrabold "> {{nombre}}</h1>
 
-      <p class="  text-4xl  mr-3.5 pt-5 text-[#ffffff] " >{{asignacion}} <span class="underline decoration-blue-500 escribir"> </span></p>
+    <p
+      class="  text-4xl  mr-3.5 pt-5 text-[#ffffff] font-extrabold">{{asignacion}}
+      <span class="underline decoration-blue-950 escribir"> </span></p>
 
   </div>
 
-  </section>
-   
+</section>

@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"], // Asegúrate de ajustar las rutas según tu estructura de proyecto
+  content: [
+    "./src/**/*.{html,js,ts}",
+    "./node_modules/flowbite/**/*.js"
+  ], // Asegúrate de ajustar las rutas según tu estructura de proyecto
+
   theme: {
     fontSize: {
       sm: "0.8rem",
@@ -11,7 +15,12 @@ module.exports = {
       "4xl": "2.441rem",
       "5xl": "3.052rem",
     },
-    extend: {},
+    extend: {
+      height: {
+        62: "70vh",
+        68: "90vh",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

@@ -3,15 +3,86 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(207 250 254);
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
 
-body {  font-family: Roboto, "Helvetica Neue", sans-serif;background-color: rgb(207 250 254);  }    
-html {scroll-behavior: smooth;}
-html, body { height: 100%  }
+::-webkit-scrollbar {
+  width: 12px;
+ 
+}
+::-webkit-scrollbar-horizontal {
+  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+/* la parte por donde va la barra */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
 
+/* botones */
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
 
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+}
 
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
 
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
 
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+/* la parte movil que se desplaza */
+::-webkit-scrollbar-thumb {
+  background: #262c40;
+  
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
+/* Personalización básica para Firefox */
+::-moz-scrollbar {
+  width: 12px;  /* Ancho de la barra de desplazamiento vertical */
+  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;  /* Color de la pista */
+}
+
+::-moz-scrollbar-thumb {
+  background: #262c40;  /* Color del thumb */
+  border-radius: 10px;  /* Esquinas redondeadas para el thumb */
+}
+
+/* Hover del thumb */
+::-moz-scrollbar-thumb:hover {
+  background: #555;  /* Color del thumb cuando se pasa el mouse */
+}
