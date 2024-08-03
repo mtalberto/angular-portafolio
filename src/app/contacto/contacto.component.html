@@ -1,13 +1,13 @@
 <section id="contacto" class="  h-68 flex flex-col text-[#30306d]">
-  <h3 id="txtcontacto" class="   underline  text-2xl ">
+  <h3 id="txtcontacto" class="text-2xl underline ">
     <strong>{{ contacto }}</strong>
   </h3>
-  <div class="container  mx-auto flex-grow grid grid-cols-2 md:grid-cols-2   "
+  <div class="container grid flex-grow grid-cols-2 mx-auto md:grid-cols-2 "
     data-aos="flip-right">
     <!-- primer columna: imagen y fondo-->
     <div class="col-span-1 pl-80">
       <div
-        class=" row-span-1 mt-10 ml-2 flex justify-center items-center  h-62  bg-sky-950">
+        class="flex items-center justify-center row-span-1 mt-10 ml-2 h-62 bg-sky-950">
         <img width="110px"
           src="assets/imagenes/fondocontacto.png" alt="fotopersonal">
       </div>
@@ -15,10 +15,10 @@
     <!-- Segunda columna: formulario -->
     <div class="col-span-1 w-[600px]  mt-10  bg-white  h-62 font-bold">
       <form    >
-      <div class="container  w-3/4 mx-auto  ">
+      <div class="container w-3/4 mx-auto ">
         <div class="pt-10 ">
           <label for="email"
-            class=" ">Email*</label>
+            class="">Email*</label>
           <input type="email" class="form-control" formControlName="email" id="email"
             placeholder="Correo electrónico" required="true">
         </div>
@@ -32,17 +32,17 @@
         </div>
         <div class="pt-3 ">
           <label for="asunto"
-            class=" ">Asunto*</label>
+            class="">Asunto*</label>
           <input type="text" class="form-control" id="asunto"
             placeholder="Asunto"   required="true" formControlName="asunto">
         </div>
         <div class="pt-3 ">
           <label for="nombre"
-            class=" ">Nombre*</label>
+            class="">Nombre*</label>
           <input type="text" class="form-control" id="nombre"
             placeholder="Nombre " required="true" formControlName="nombre">
         </div>
-        <button  type="submit" class="h-10 w-3/12 mt-10 bg-slate-700  text-white font-normal ">
+        <button  type="submit" class="w-3/12 h-10 mt-10 font-normal text-white bg-slate-700 ">
           <em> Enviar</em>
         </button>
       </div>

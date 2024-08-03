@@ -62,7 +62,7 @@ body {
   
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -78,11 +78,11 @@ body {
 }
 
 ::-moz-scrollbar-thumb {
-  background: #262c40;  /* Color del thumb */
+  background: #262c40;  
   border-radius: 10px;  /* Esquinas redondeadas para el thumb */
 }
 
 /* Hover del thumb */
 ::-moz-scrollbar-thumb:hover {
-  background: #555;  /* Color del thumb cuando se pasa el mouse */
+  background: #555;  
 }
