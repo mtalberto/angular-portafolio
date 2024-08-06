@@ -28,7 +28,5 @@ import { ContactoComponent } from "./contacto/contacto.component";
 export class AppComponent {
   title = 'angular-portafolio';
 
-  ngOnInit(): void {
-    
-  }
+  
 }

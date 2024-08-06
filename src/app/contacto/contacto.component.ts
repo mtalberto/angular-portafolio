@@ -6,6 +6,7 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contacto',
@@ -51,20 +52,38 @@ export class ContactoComponent {
   constructor(private fb: FormBuilder) {
     this.crearFormulario();
   }
-
+  
   crearFormulario() {
     this.formulario = this.fb.group({
       mensaje: ['', [Validators.required, Validators.minLength(5)]],
       email: ['', [Validators.required, Validators.pattern(this.ptnemail)]],
-      asunto: ['', [Validators.required, Validators.minLength(10)]],
+      asunto: ['', [Validators.required, Validators.minLength(5)]],
       nombre: ['', [Validators.required]],
     });
   }
 
   guardar() {
     console.log(this.formulario.value);
+    //compruebo si el formulario es invalido
+    if (this.formulario.invalid) {
+      // y recorro cada input para validar uno a no
+     return Object.values(this.formulario.controls).forEach((control) => {
+       control.markAllAsTouched(); 
+     });
+    } else{
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'El formulario es correcto',
+        text: ' Pero es solo un test',
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+   
+  
   }
-
+  //limpiar los campos
   limpiar() {
     this.formulario.reset();
   }
