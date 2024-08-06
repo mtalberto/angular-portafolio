@@ -14,38 +14,71 @@
     </div>
     <!-- Segunda columna: formulario -->
     <div class="col-span-1 w-[600px]  mt-10  bg-white  h-62 font-bold">
-      <form    >
-      <div class="container w-3/4 mx-auto ">
-        <div class="pt-10 ">
-          <label for="email"
-            class="">Email*</label>
-          <input type="email" class="form-control" formControlName="email" id="email"
-            placeholder="Correo electrónico" required="true">
+      <form  [formGroup]="formulario"   (ngSubmit)="guardar()">
+        <div class="container w-3/4 mx-auto ">
+          <div class="pt-10 ">
+            <label for="email"
+              class>Email*</label>
+            <input 
+            [class.is-invalid]="emailNoValido"
+            type="email"
+             class="form-control" 
+             formControlName="email"
+              id="email"
+              placeholder="Correo electrónico" required="true">
+            <small 
+             *ngIf="emailNoValido" 
+              class="text-danger">Ingrese un correo válido
+              ejemplo&#64;email.com</small>
+          </div>
+          <!-- cuando el usuario haga click en el label el foco se mueve al input asociado mediante el id de ambos -->
+          <div class="mt-3 ">
+            <label for="mensaje"
+              class="form-label">Mensaje*</label>
+            <textarea class="form-control" id="mensaje"
+              placeholder="escribe una mensaje"
+              rows="5" required="true" maxlength="50"
+              formControlName="mensaje"></textarea>
+            <small
+              *ngIf="mensajeNoValido"
+              class="text-danger"> campo requerido y minimo 5 letras
+            </small>
+          </div>
+          <div class="pt-3 ">
+            <label for="asunto"
+              class>Asunto*</label>
+            <input
+            [class.is-invalid]="asuntoNoValido"
+             type="text" 
+             class="form-control" 
+             id="asunto"
+              placeholder="Asunto" required="true" formControlName="asunto">
+            <small
+              *ngIf="asuntoNoValido"
+              class="text-danger"> campo requerido y minimo 5 letras
+            </small>
+          </div>
+          <div class="pt-3 ">
+            <label for="nombre"
+              class>Nombre*</label>
+            <input type="text" class="form-control" id="nombre"
+              [class.is-invalid]="nombreNoValido"
+              placeholder="Nombre " required="true" formControlName="nombre">
+            <small
+              *ngIf="nombreNoValido"
+              class="text-danger">tienes que poner un nombre y mínimo 5 letras
+            </small>
+          </div>
+          <button type="submit"
+            class="w-3/12 h-10 mt-10 font-normal text-white bg-slate-700 ">
+            Enviar
+          </button>
+          <button type="button" (click)="limpiar()"
+            class="w-3/12 h-10 mt-10 ml-20 font-normal text-white bg-slate-700 ">
+            Limpiar
+          </button>
+
         </div>
-        <!-- cuando el usuario haga click en el label el foco se mueve al input asociado mediante el id de ambos -->
-        <div class="mt-3 ">
-          <label for="mensaje"
-            class="form-label">Mensaje*</label>
-          <textarea class="form-control" id="mensaje"
-            placeholder="escribe una mensaje"
-            rows="5" required="true" maxlength="50" formControlName="mensaje"></textarea>
-        </div>
-        <div class="pt-3 ">
-          <label for="asunto"
-            class="">Asunto*</label>
-          <input type="text" class="form-control" id="asunto"
-            placeholder="Asunto"   required="true" formControlName="asunto">
-        </div>
-        <div class="pt-3 ">
-          <label for="nombre"
-            class="">Nombre*</label>
-          <input type="text" class="form-control" id="nombre"
-            placeholder="Nombre " required="true" formControlName="nombre">
-        </div>
-        <button  type="submit" class="w-3/12 h-10 mt-10 font-normal text-white bg-slate-700 ">
-          <em> Enviar</em>
-        </button>
-      </div>
       </form>
     </div>
   </div>

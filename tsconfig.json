@@ -11,7 +11,7 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "sourceMap": true,
+    "sourceMap":  true,
     "declaration": false,
     "paths": { "@info/*": ["./src/assets/api/*",]},
     "experimentalDecorators": true,
@@ -27,7 +27,7 @@
     ]
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
+    "enableI18nLegacyMessageIdFormat": true,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true

@@ -5,9 +5,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from './header/header.component';
 import { CvComponent } from './cv/cv.component';
 import { ContactoComponent } from "./contacto/contacto.component";
-import { ReactiveFormsModule } from '@angular/forms';
-import { initFlowbite } from 'flowbite';
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 
 
 
@@ -24,14 +22,13 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     HeaderComponent,
     CvComponent,
     ContactoComponent,
-    ReactiveFormsModule,
-    SweetAlert2Module,
+  
   ],
 })
 export class AppComponent {
   title = 'angular-portafolio';
 
   ngOnInit(): void {
-    initFlowbite();
+    
   }
 }
