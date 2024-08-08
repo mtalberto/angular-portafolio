@@ -9,3 +9,10 @@
  
 }
 
+
+.txtACto{
+    resize: none;
+    width:120px
+    field-sizing:content;
+    min-height: 4lh;
+}
